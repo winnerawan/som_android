@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AndroidX</string>
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+    <!--play store-->
+    <string name="appid">ca-app-pub-9400864410179150~6165476966</string>
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+    <string name="signup"><b><u>Sign Up</u></b></string>
+    <string name="message_empty_email">Please provide a non empty email!</string>
+    <string name="message_invalid_email">Please provide a valid email!</string>
+    <string name="message_empty_password">Please provide a non empty password!</string>
+    <string name="message_empty_name">Please provide a non empty username!</string>
+    <string name="som">Sales On Mobile</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="som_desc">Your Business Will Be Easier</string>
+    <string name="email">Email</string>
+</resources>

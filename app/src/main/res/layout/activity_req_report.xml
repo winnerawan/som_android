@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:paddingTop="@dimen/padding_16dp"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingRight="@dimen/padding_16dp"
+                android:textSize="18sp"
+                android:text="Periode"
+                android:textStyle="bold"
+                android:id="@+id/reportname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            <com.isapanah.awesomespinner.AwesomeSpinner
+                    android:layout_marginLeft="@dimen/padding_16dp"
+                    android:id="@+id/my_spinner"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    app:spinnerDirection="ltr"
+                    app:spinnerHint="April" />
+
+            <com.isapanah.awesomespinner.AwesomeSpinner
+                    android:layout_marginRight="@dimen/padding_16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    app:spinnerDirection="ltr"
+                    app:spinnerHint="2019" />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.anychart.AnyChartView
+                    android:id="@+id/any_chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+            <ProgressBar
+                    android:layout_centerInParent="true"
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
